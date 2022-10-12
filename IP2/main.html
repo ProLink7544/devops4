@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <header>
+      <SCRIPT>
+        function myFunction() {
+          let d, CC,YY,MM,DD,mod;
+          const dateControl = document.querySelector('input[type="date"]');
+          console.log(dateControl.value);
+          dateControl.value.d=(((dateControl.value.CC/4)-2*dateControl.value.CC-1)+((5*dateControl.value.YY/4))+((26*(dateControl.value.MM+1)/10))+dateControl.value.DD)
+          console.log(dateControl.value.d);
+          if(document.getElementsById = "male"){
+
+              alert("You selected male")
+            }else if(document.getElementsById = "female"){
+             alert("You selected female")
+            }
+        }
+        </SCRIPT> 
+    </header>
+    <body>
+        <form>
+          <h4>
+            Enter sex:
+          </h4>
+            <input type="radio" id="Male" name="sex">
+            <label>Male</label><br>
+            <input type="radio" id="Female" name="sex">
+            <label>Female</label><br>
+          </label>
+            <label>
+              Enter date of birth:
+              <input
+                type="date"
+                value="yyyy-mm-dd"
+                min="2000-01-01"
+                max="2020-12-31"
+                required />
+              <span class="validity"></span>
+            </label>
+            <p>
+              <button type="button" onclick="myFunction()">Submit</button>
+            </p>
+          </form>
+          
+    </body>
+</html>
