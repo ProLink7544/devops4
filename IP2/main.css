@@ -1,9 +1,7 @@
-label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+body{
+    background-color: rgba(194, 64, 86, 0.349);
+}
+h1{
+    color: rgb(169, 169, 241);
 }
 
-input,
-label {
-    margin: .4rem 0;
-}
