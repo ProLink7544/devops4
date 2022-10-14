@@ -12,7 +12,7 @@
       <SCRIPT>
         function myFunction() {
           let results="";
-          // how to capture date
+          // To capture date
           const inputDate = document.querySelector('input[type="date"]');
           console.log(inputDate.value);
           const selectedDate = new Date(inputDate.value);
@@ -22,7 +22,6 @@
           let day = weekday[d.getDay()];
           console.log(day)
 //predicting Akan names
-
           if(document.getElementById('male').checked == true){
             
                 switch(day){
@@ -75,12 +74,17 @@
                     }
 
             }
+            //display result on text area
             document.getElementById('outputBox').innerHTML = results;
         }
         </SCRIPT> 
     </header>
     <body>
       <center>
+        <table border="1" width="400" height="400">
+          <tr>
+            <td>
+              <center>
         <form>
           <div alignment="center">
           <h4>
@@ -93,7 +97,7 @@
             <label for="female">Female</label><br><br>
             </form>
             </div>
-        <div>
+            <div>
             <label>
               Select date of birth:<br>
               <p>
@@ -108,12 +112,15 @@
             <p>
               <button type="button" onclick="myFunction()">Submit</button>
             </p>
-            <textarea id="outputBox" rows="10" cols="20"></textarea>
+            <textarea id="outputBox" rows="2" cols="30"></textarea>
           </p>
             <img src="image/flag.jpg" alt="flag" width="200" height="200">
         </div>
           </form>
+          </center>
+          </td>
+        </tr>
+          </table>
       </center>
     </body>
-    
 </html>
