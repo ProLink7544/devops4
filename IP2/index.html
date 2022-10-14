@@ -2,15 +2,16 @@
 <html lang="eng">
   <link rel="stylesheet" href="index.css">
     <header>
-     NAME PREDICTION
-     <p> <b>
-      Most people do know when their birthdays are but 
+     <div alignment="center">
+     <p>
+      Most people do know when their birthdays are but
       some might not know what day of the week they were born.
-      Luckly for us, there are ways to calculate the day of the week from specific date.
+      Luckly for us, there are ways to calculate the day of the week from specific date."
      </p>
-    </b>
+    </div>
       <SCRIPT>
         function myFunction() {
+          let results="";
           // how to capture date
           const inputDate = document.querySelector('input[type="date"]');
           console.log(inputDate.value);
@@ -21,70 +22,78 @@
           let day = weekday[d.getDay()];
           console.log(day)
 //predicting Akan names
-          if(document.getElementsById = "Male"){
-                switch(day){
-  case "Sunday":
-  alert("Your Akan name is : KWASI");
-  break;
-  case "Monday":
-  alert("Your Akan name is : KWADWO");
-  break;
-  case "Tuesday":
-  alert("Your Akan name is : KWABENA");
-  break;
-  case "Wednesday":
-  alert("Your Akan name is : KWAKU");
-  break;
-  case "Thursday":
-  alert("Your Akan name is : YAW");
-  break;
-  case "Friday":
-  alert("Your Akan name is : KOFI");
-  break;
-  case "Saturday":
-  alert("Your Akan name is : KWASI");
-  break;
-}
 
-   }else if(document.getElementsById = "Female"){
-   switch(day){
-  case "Sunday":
-  alert("Your Akan name is : AKOSA");
-  break;
-  case "Monday":
-  alert("Your Akan name is: ADWOA");
-  break;
-  case "Tuesday":
-  alert("Your Akan name is : ABENAA");
-  break;
-  case "Wednesday":
-  alert("Your Akan name is  : AKUA");
-  break;
-  case "Thursday":
-  alert("Your Akan name is : YAA");
-  break;
-  case "Friday":
-  alert("Your Akan name is : AFUA");
-  break;
-  case "Saturday":
-  alert("Your Akan name is : AMA");
-  break;
-}
+          if(document.getElementById('male').checked == true){
+            
+                switch(day){
+                      case "Sunday":
+                      results="Your Akan name is : KWASI"
+                      break;
+                      case "Monday":
+                      results="Your Akan name is : KWADWO";
+                      break;
+                      case "Tuesday":
+                      results="Your Akan name is : KWABENA";
+                      break;
+                      case "Wednesday":
+                      results="Your Akan name is : KWAKU";
+                      break;
+                      case "Thursday":
+                      results="Your Akan name is : YAW";
+                      break;
+                      case "Friday":
+                      results="Your Akan name is : KOFI";
+                      break;
+                      case "Saturday":
+                      results="Your Akan name is : KWASI";
+                      break;
+                    }
+
+                      }else if(document.getElementById('female').checked == true){
+                      switch(day){
+                      case "Sunday":
+                      results="Your Akan name is : AKOSA";
+                      break;
+                      case "Monday":
+                      results="Your Akan name is: ADWOA";
+                      break;
+                      case "Tuesday":
+                      results="Your Akan name is : ABENAA";
+                      break;
+                      case "Wednesday":
+                      results="Your Akan name is  : AKUA";
+                      break;
+                      case "Thursday":
+                      results="Your Akan name is : YAA";
+                      break;
+                      case "Friday":
+                      results="Your Akan name is : AFUA";
+                      break;
+                      case "Saturday":
+                      results="Your Akan name is : AMA";
+                      break;
+                    }
+
             }
+            document.getElementById('outputBox').innerHTML = results;
         }
         </SCRIPT> 
     </header>
     <body>
+      <center>
         <form>
+          <div alignment="center">
           <h4>
            <b>Select sex To Know Your Akan name that is a Ghana Culture:</b> 
           </h4>
-            <input type="radio" value="Male" name="sex">
-            <label>Male</label><br><br>
-            <input type="radio" value="Female" name="sex">
-            <label>Female</label><br><br>
-            
-          </label>
+          <form name="Sex">
+            <input type="radio" id="male" value="Male" name="sex">
+            <label for="male">Male</label><br><br>
+            <input type="radio" id="female" value="Female" name="sex">
+            <label for="female">Female</label><br><br>
+            </form>
+            </div>
+        <div>
             <label>
               Select date of birth:<br>
               <p>
@@ -98,10 +107,13 @@
             </label>
             <p>
               <button type="button" onclick="myFunction()">Submit</button>
-            </p></p>
+            </p>
+            <textarea id="outputBox" rows="10" cols="20"></textarea>
+          </p>
             <img src="image/flag.jpg" alt="flag" width="200" height="200">
+        </div>
           </form>
-          
+      </center>
     </body>
     
 </html>
