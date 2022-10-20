@@ -4,26 +4,30 @@
     <header>
      <div alignment="center">
      <p>
+      <!--Brief description for the site-->
       Most people do know when their birthdays are but
       some might not know what day of the week they were born.
       Luckly for us, there are ways to calculate the day of the week from specific date.
      </p>
     </div>
+    <!--calling a javascript funtion-->
       <SCRIPT>
         function myFunction() {
           let results="";
           // To capture date
           const inputDate = document.querySelector('input[type="date"]');
+          //to display date on console
           console.log(inputDate.value);
           const selectedDate = new Date(inputDate.value);
 //Array to populate day of week
           const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
           const d = new Date(inputDate.value);
           let day = weekday[d.getDay()];
+          //to display day on result on console
           console.log(day)
 //predicting Akan names
           if(document.getElementById('male').checked == true){
-            
+            //selection for male category
                 switch(day){
                       case "Sunday":
                       results="Your Akan name is : KWASI"
@@ -47,7 +51,7 @@
                       results="Your Akan name is : KWASI";
                       break;
                     }
-
+                    //selection for female category
                       }else if(document.getElementById('female').checked == true){
                       switch(day){
                       case "Sunday":
@@ -90,6 +94,7 @@
           <h4>
            <b>Select sex To Know Your Akan name that is a Ghana Culture:</b> 
           </h4>
+          <!--input of the radio to select gender male or female-->
           <form name="Sex">
             <input type="radio" id="male" value="Male" name="sex">
             <label for="male">Male</label><br><br>
@@ -101,19 +106,23 @@
             <label>
               Select date of birth:<br>
               <p>
+                <!--input for the calender in formate of year/month/day-->
               <input
                 type="date"
                 value="yyyy-mm-dd"
                 min="2000-01-01"
                 max="2020-12-31"
                 required />
-              <span class="validity"></span>
+       <!--validity check to ensure date is selected-->
+                <span class="validity"></span>
             </label>
             <p>
+              <!--function for the submit button-->
               <button type="button" onclick="myFunction()">Submit</button>
             </p>
             <textarea id="outputBox" rows="2" cols="30"></textarea>
           </p>
+          <!--inserting an image-->
             <img src="image/flag.jpg" alt="flag" width="200" height="200">
         </div>
           </form>
