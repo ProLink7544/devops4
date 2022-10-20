@@ -1,12 +1,34 @@
-## Installation
-## Authored By: Protus Ngugi Mwangi 
+ ## project name
+ IP2 (INDIPENDENT PROJECT 2)
+ This project is about the prediction of names, Version Date: 20th Oct 2022.
 
-This document is for project name IP2
+#### By **Protus**
 
-- This repo contains all class code divided into weeks
+## Description
+This project picks the user’s birthday and calculates the day of the week they were born and then by gender outputs their Akan names which is a community in Ghana were kids are given names as per the day they were born.
 
-## Setup
+## Setup/Installation Requirements
 
-- Clone the repo, navigate to the directory on file explorer and double click a .HTML file to open in a browser
+- The project is easy-to-understand
 
-- The site is deployed at XXXXX
+- Just click on the hyperlinks that will direct you to view Github projects.
+
+## Known Bugs
+
+There are no known bugs on this project.
+
+## Technologies Used
+
+Languages used include HTML,JavaScript and CSS. I have used editor Visual Studio Code for creating the app and Git Bash terminal for coding.
+
+## The live link is below
+https://prolink7544.github.io/devops4/IP2/
+
+## Support and contact details
+
+If you need any assistance on any issues or have questions, ideas or concerns. Kindly contact me through email: prolink@gmail.com to make a contribution to the code or for any assistance on the app/project.
+
+### License
+_The License used is GPL_
+
+Copyright (c) 2022 **protus ngugi**
